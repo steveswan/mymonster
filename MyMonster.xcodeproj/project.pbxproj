@@ -13,6 +13,7 @@
 		A444FE601C88FD97009BCE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A444FE5F1C88FD97009BCE72 /* Assets.xcassets */; };
 		A444FE631C88FD97009BCE72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A444FE611C88FD97009BCE72 /* LaunchScreen.storyboard */; };
 		A4ED2CD91C8A1BBF009BD4DD /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */; };
+		A4ED2CDB1C8A2FA6009BD4DD /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A444FE621C88FD97009BCE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A444FE641C88FD97009BCE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A444FE611C88FD97009BCE72 /* LaunchScreen.storyboard */,
 				A444FE641C88FD97009BCE72 /* Info.plist */,
 				A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */,
+				A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */,
 			);
 			path = MyMonster;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4ED2CDB1C8A2FA6009BD4DD /* MonsterImg.swift in Sources */,
 				A4ED2CD91C8A1BBF009BD4DD /* DragImg.swift in Sources */,
 				A444FE5B1C88FD97009BCE72 /* ViewController.swift in Sources */,
 				A444FE591C88FD97009BCE72 /* AppDelegate.swift in Sources */,
