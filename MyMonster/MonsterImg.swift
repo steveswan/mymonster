@@ -11,13 +11,16 @@ import UIKit
 
 
 class MonsterImg: UIImageView {
-   override init(frame: CGRect) {
+    
+    override init(frame: CGRect) {
     super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        playIdleAnimation()
+        // playIdleAnimation()
+        // playAnimation(4, base: "idle", duration: 0.8, repeatCount: 0)
+    
     }
     
     
@@ -38,4 +41,21 @@ class MonsterImg: UIImageView {
 
         
     }
+    
+    func playAnimation(frames: Int, base: String, duration: Double, repeatCount: Int) {
+        var imgArray = [UIImage]()
+        
+        for var x = 1; x <= frames; x++ {
+            let img = UIImage(named: "\(base)\(x).png")
+            imgArray.append(img!)
+        }
+        
+        animationImages = imgArray
+        animationDuration = duration
+        animationRepeatCount = repeatCount
+        startAnimating()
+        
+
+    }
+    
 }
