@@ -145,7 +145,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="3mR-SC-4YB" id="Xu1-N8-XPd"/>
+                        <outlet property="heartImg" destination="amm-X5-lOF" id="etj-TW-OlN"/>
                         <outlet property="monsterImg" destination="vj6-Wn-r0G" id="x0Y-Jg-pjZ"/>
+                        <outlet property="skull1Img" destination="wEp-7r-mFn" id="USY-mB-jK4"/>
+                        <outlet property="skull2Img" destination="LwW-6f-2cQ" id="0kG-Mk-38t"/>
+                        <outlet property="skull3Img" destination="5yV-0g-quA" id="wZy-m0-W2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

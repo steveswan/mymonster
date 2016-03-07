@@ -27,33 +27,57 @@ class MonsterImg: UIImageView {
     
     func playIdleAnimation() {
         
-        var imgArray = [UIImage]()
+        self.image = UIImage(named: "idle1.png")
         
+        self.animationImages = nil
+        
+        var imgArray = [UIImage]()
         for var x = 1; x <= 4; x++ {
             let img = UIImage(named: "idle\(x).png")
             imgArray.append(img!)
         }
         
-        animationImages = imgArray
-        animationDuration = 0.8
-        animationRepeatCount = 0
-        startAnimating()
+        self.animationImages = imgArray
+        self.animationDuration = 0.8
+        self.animationRepeatCount = 0
+        self.startAnimating()
+
+        
+    }
+    
+    func playDeathAnimation() {
+        
+        self.image = UIImage(named: "dead5.png")
+        
+        self.animationImages = nil
+
+        var imgArray = [UIImage]()
+        for var x = 1; x <= 5; x++ {
+            let img = UIImage(named: "dead\(x).png")
+            imgArray.append(img!)
+        }
+        
+        self.animationImages = imgArray
+        self.animationDuration = 0.8
+        self.animationRepeatCount = 1
+        self.startAnimating()
 
         
     }
     
     func playAnimation(frames: Int, base: String, duration: Double, repeatCount: Int) {
-        var imgArray = [UIImage]()
         
+        
+        var imgArray = [UIImage]()
         for var x = 1; x <= frames; x++ {
             let img = UIImage(named: "\(base)\(x).png")
             imgArray.append(img!)
         }
         
-        animationImages = imgArray
-        animationDuration = duration
-        animationRepeatCount = repeatCount
-        startAnimating()
+        self.animationImages = imgArray
+        self.animationDuration = duration
+        self.animationRepeatCount = repeatCount
+        self.startAnimating()
         
 
     }
