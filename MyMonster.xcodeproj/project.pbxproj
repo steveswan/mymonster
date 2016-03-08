@@ -12,6 +12,11 @@
 		A444FE5E1C88FD97009BCE72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A444FE5C1C88FD97009BCE72 /* Main.storyboard */; };
 		A444FE601C88FD97009BCE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A444FE5F1C88FD97009BCE72 /* Assets.xcassets */; };
 		A444FE631C88FD97009BCE72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A444FE611C88FD97009BCE72 /* LaunchScreen.storyboard */; };
+		A4A369AF1C8E4CD8006477A6 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AB1C8E4CD8006477A6 /* bite.wav */; };
+		A4A369B01C8E4CD8006477A6 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AC1C8E4CD8006477A6 /* cave-music.mp3 */; };
+		A4A369B11C8E4CD8006477A6 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AD1C8E4CD8006477A6 /* heart.wav */; };
+		A4A369B21C8E4CD8006477A6 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AE1C8E4CD8006477A6 /* skull.wav */; };
+		A4A369B41C8E4F1B006477A6 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369B31C8E4F1B006477A6 /* death.wav */; };
 		A4ED2CD91C8A1BBF009BD4DD /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */; };
 		A4ED2CDB1C8A2FA6009BD4DD /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +29,11 @@
 		A444FE5F1C88FD97009BCE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A444FE621C88FD97009BCE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A444FE641C88FD97009BCE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A369AB1C8E4CD8006477A6 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		A4A369AC1C8E4CD8006477A6 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		A4A369AD1C8E4CD8006477A6 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		A4A369AE1C8E4CD8006477A6 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		A4A369B31C8E4F1B006477A6 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +68,11 @@
 		A444FE571C88FD97009BCE72 /* MyMonster */ = {
 			isa = PBXGroup;
 			children = (
+				A4A369AB1C8E4CD8006477A6 /* bite.wav */,
+				A4A369AC1C8E4CD8006477A6 /* cave-music.mp3 */,
+				A4A369B31C8E4F1B006477A6 /* death.wav */,
+				A4A369AD1C8E4CD8006477A6 /* heart.wav */,
+				A4A369AE1C8E4CD8006477A6 /* skull.wav */,
 				A444FE581C88FD97009BCE72 /* AppDelegate.swift */,
 				A444FE5A1C88FD97009BCE72 /* ViewController.swift */,
 				A444FE5C1C88FD97009BCE72 /* Main.storyboard */,
@@ -129,6 +144,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A369AF1C8E4CD8006477A6 /* bite.wav in Resources */,
+				A4A369B11C8E4CD8006477A6 /* heart.wav in Resources */,
+				A4A369B21C8E4CD8006477A6 /* skull.wav in Resources */,
+				A4A369B41C8E4F1B006477A6 /* death.wav in Resources */,
+				A4A369B01C8E4CD8006477A6 /* cave-music.mp3 in Resources */,
 				A444FE631C88FD97009BCE72 /* LaunchScreen.storyboard in Resources */,
 				A444FE601C88FD97009BCE72 /* Assets.xcassets in Resources */,
 				A444FE5E1C88FD97009BCE72 /* Main.storyboard in Resources */,
