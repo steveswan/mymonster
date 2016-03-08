@@ -17,6 +17,7 @@
 		A4A369B11C8E4CD8006477A6 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AD1C8E4CD8006477A6 /* heart.wav */; };
 		A4A369B21C8E4CD8006477A6 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369AE1C8E4CD8006477A6 /* skull.wav */; };
 		A4A369B41C8E4F1B006477A6 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4A369B31C8E4F1B006477A6 /* death.wav */; };
+		A4A369B61C8F2849006477A6 /* NewCharactdr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A369B51C8F2849006477A6 /* NewCharactdr.swift */; };
 		A4ED2CD91C8A1BBF009BD4DD /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */; };
 		A4ED2CDB1C8A2FA6009BD4DD /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		A4A369AD1C8E4CD8006477A6 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		A4A369AE1C8E4CD8006477A6 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 		A4A369B31C8E4F1B006477A6 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		A4A369B51C8F2849006477A6 /* NewCharactdr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCharactdr.swift; sourceTree = "<group>"; };
 		A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				A444FE641C88FD97009BCE72 /* Info.plist */,
 				A4ED2CD81C8A1BBF009BD4DD /* DragImg.swift */,
 				A4ED2CDA1C8A2FA6009BD4DD /* MonsterImg.swift */,
+				A4A369B51C8F2849006477A6 /* NewCharactdr.swift */,
 			);
 			path = MyMonster;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				A4ED2CD91C8A1BBF009BD4DD /* DragImg.swift in Sources */,
 				A444FE5B1C88FD97009BCE72 /* ViewController.swift in Sources */,
 				A444FE591C88FD97009BCE72 /* AppDelegate.swift in Sources */,
+				A4A369B61C8F2849006477A6 /* NewCharactdr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

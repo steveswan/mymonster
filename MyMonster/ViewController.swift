@@ -13,6 +13,10 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var monsterImg: MonsterImg!
+    
+    @IBOutlet weak var littleIdleImg: UIImageView!
+    
+    
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
@@ -46,7 +50,7 @@ class ViewController: UIViewController {
         foodImg.dropTarget = monsterImg
         heartImg.dropTarget = monsterImg
         
-        
+      
         
         restartGame()
         
@@ -56,6 +60,8 @@ class ViewController: UIViewController {
         
         if !gamePlayed {
             print("this is the first time the game was played")
+            character1.hidden = false
+            character2.hidden = false
         } else {
             print("you've already played")
         }
@@ -102,8 +108,7 @@ class ViewController: UIViewController {
     
     
     func selectCharacter() {
-        monsterImg.image = UIImage(named: "idle1.png")
-        monsterImg.playIdleAnimation()
+        
     }
     
     func itemDroppedOnCharacter(notif: NSNotification) {
@@ -200,6 +205,10 @@ class ViewController: UIViewController {
 
     
     @IBAction func character1(sender: AnyObject) {
+        monsterImg.image = UIImage(named: "littleIdle1.png")
+        monsterImg.animationImages = nil
+        monsterImg.playAnimation(3, base: "littleIdle", duration: 0.8, repeatCount: 0)
+        
     }
     @IBAction func character2(sender: AnyObject) {
     }
