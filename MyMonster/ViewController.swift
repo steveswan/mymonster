@@ -13,11 +13,16 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var monsterImg: MonsterImg!
+    @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
     @IBOutlet weak var skull1Img: UIImageView!
     @IBOutlet weak var skull2Img: UIImageView!
     @IBOutlet weak var skull3Img: UIImageView!
+    
+    @IBOutlet weak var character1: UIButton!
+    
+    @IBOutlet weak var character2: UIButton!
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -26,6 +31,7 @@ class ViewController: UIViewController {
     var penalties = 0
     var timer: NSTimer!
     var monsterHappy = false
+    var gamePlayed = false
     var currentItem: UInt32 = 0
     
     var musicPlayer: AVAudioPlayer!
@@ -40,11 +46,27 @@ class ViewController: UIViewController {
         foodImg.dropTarget = monsterImg
         heartImg.dropTarget = monsterImg
         
+        
+        
+        restartGame()
+        
+    }
+    
+    func restartGame() {
+        
+        if !gamePlayed {
+            print("this is the first time the game was played")
+        } else {
+            print("you've already played")
+        }
+        
+        penalties = 0
         skull1Img.alpha = DIM_ALPHA
         skull2Img.alpha = DIM_ALPHA
         skull3Img.alpha = DIM_ALPHA
         
-        monsterImg.playIdleAnimation()
+        gamePlayed = true
+        selectCharacter()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
         
@@ -58,7 +80,7 @@ class ViewController: UIViewController {
             try sfxDeath = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("death", ofType: "wav")!))
             
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
-
+            
             musicPlayer.prepareToPlay()
             musicPlayer.play()
             
@@ -74,8 +96,14 @@ class ViewController: UIViewController {
         
         
         startTimer()
-        
-        
+
+    }
+    
+    
+    
+    func selectCharacter() {
+        monsterImg.image = UIImage(named: "idle1.png")
+        monsterImg.playIdleAnimation()
     }
     
     func itemDroppedOnCharacter(notif: NSNotification) {
@@ -165,9 +193,18 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImg.alpha = DIM_ALPHA
         heartImg.userInteractionEnabled = false
+        
+        NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: "restartGame", userInfo: nil, repeats: false)
 
     }
 
+    
+    @IBAction func character1(sender: AnyObject) {
+    }
+    @IBAction func character2(sender: AnyObject) {
+    }
+    
+    
     
 }
 
